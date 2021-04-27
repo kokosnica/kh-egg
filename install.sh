@@ -23,7 +23,7 @@ vanilla=false
 papermc=false
 forge=false
 tuinity=false
-tuinity-opt=false
+tuinity2=false
 yatopia=false
 custom=false
 
@@ -43,7 +43,7 @@ case $EGG in
       4 )
           tuinity=true ;;
       5 )
-          tuinity-opt=true ;;
+          tuinity2=true ;;
       6 )
           yatopia=true ;;
       7 )
@@ -51,11 +51,12 @@ case $EGG in
       * )
           error "Invalid option" ;;
 
+
 [ "$nevybrano" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/nevybrano/install.sh)
 [ "$vanilla" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/vanilla.sh)
 [ "$papermc" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/papermc.sh)
 [ "$forge" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/forge.sh)
 [ "$tuinity" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/tuinity.sh)
-[ "$tuinity-opt" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/tuinity-opt.sh)
+[ "$tuinity2" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/tuinity-opt.sh)
 [ "$yatopia" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/yatopia.sh)
 [ "$custom" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/custom.sh)
