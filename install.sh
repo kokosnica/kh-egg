@@ -50,7 +50,7 @@ case $EGG in
           custom=true ;;
       * )
           error "Invalid option" ;;
-
+esac
 
 [ "$nevybrano" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/nevybrano/install.sh)
 [ "$vanilla" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/vanilla.sh)
