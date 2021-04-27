@@ -4,7 +4,7 @@ curl -sSL "https://api.yatopiamc.org/v2/latestBuild/download?branch=ver/${YATOPI
 
 if [ ! -f server.properties ]; then
     echo -e "Downloading MC server.properties"
-    curl -o server.properties https://raw.githubusercontent.com/kokosnica/eula/main/server.properties
+    curl -o server.properties https://raw.githubusercontent.com/kokosnica/kh-egg/main/server.properties
 fi
 
 if [ ! -f eula.txt ]; then
