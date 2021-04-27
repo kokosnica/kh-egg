@@ -1,3 +1,5 @@
+apt install -y curl jq
+
 if [ ! -d /mnt/server ]; then
     mkdir /mnt/server
 fi
