@@ -18,6 +18,7 @@ error() {
   echo ""
 }
 
+nevybrano=false
 vanilla=false
 papermc=false
 forge=false
@@ -31,6 +32,8 @@ output "K-Hosting egg installer"
 output
 
 case $EGG in
+      0 )
+          nevybrano=true ;;
       1 )
           vanilla=true ;;
       2 )
@@ -48,6 +51,7 @@ case $EGG in
       * )
           error "Invalid option" ;;
 
+[ "$nevybrano" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/nevybrano/install.sh)
 [ "$vanilla" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/vanilla.sh)
 [ "$papermc" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/papermc.sh)
 [ "$forge" == true ] && bash <(curl -s https://raw.githubusercontent.com/kokosnica/kh-egg/main/eggs/forge.sh)
