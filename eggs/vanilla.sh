@@ -1,3 +1,5 @@
+apt install -y jq curl
+
 mkdir -p /mnt/server
 cd /mnt/server
 
