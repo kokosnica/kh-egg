@@ -1,3 +1,5 @@
+apt install -y curl jq
+
 if [ -n "${DL_PATH}" ]; then
 	echo -e "Using supplied download url: ${DL_PATH}"
 	DOWNLOAD_URL=`eval echo $(echo ${DL_PATH} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
