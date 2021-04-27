@@ -43,5 +43,5 @@ curl -o ${SERVER_JARFILE} ${DOWNLOAD_URL}
 
 if [ ! -f server.properties ]; then
     echo -e "Downloading MC server.properties"
-    curl -o server.properties https://raw.githubusercontent.com/parkervcp/eggs/master/minecraft/java/server.properties
+    curl -o server.properties https://raw.githubusercontent.com/kokosnica/kh-egg/main/server.properties
 fi
